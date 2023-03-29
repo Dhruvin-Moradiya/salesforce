@@ -1,0 +1,10 @@
+<apex:page docType="html-5.0" controller="CallingClass">
+    <apex:form >
+     <apex:outputlabel >Enter Numbers</apex:outputlabel>
+     <apex:input type="number" value="{!num1}"/>
+     <apex:input type="number" value="{!num2}"/>
+     <apex:commandButton value="click" rerender="one" action="{!callAddTwoNumbers}"/>
+     <apex:outputLabel id="one">{!sum}</apex:outputLabel>     
+ 	</apex:form>
+    <apex:outputText value="{!sum}" />
+</apex:page>

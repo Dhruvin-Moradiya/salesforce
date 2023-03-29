@@ -1,0 +1,23 @@
+<aura:component controller="AddNumbers" implements="flexipage:availableForAllPageTypes" access="global" >
+    <aura:attribute name="num1" type="Integer" />
+    <aura:attribute name="num2" type="Integer" />
+    <aura:attribute name="sum" type="Integer" />
+    
+    <div>
+        <label>Number 1:</label>
+        <ui:inputNumber value="{!v.num1}" />
+    </div>
+    
+    <div>
+        <label>Number 2:</label>
+        <ui:inputNumber value="{!v.num2}" />
+    </div>
+    
+    <div>
+        <ui:button label="Add Numbers" press="{!c.add}" />
+    </div>
+    
+    <div>
+        <p>Sum: {!v.sum}</p>
+    </div>
+</aura:component>
